@@ -8,9 +8,14 @@
     
 }
 
+.out-container{
+    background-color: white;
+    padding: 50px;
+}
+
 .in-container{
     background-color: white;
-    border: 1px solid black;
+    border: 3px solid black;
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0%;
@@ -24,6 +29,7 @@
 img{
     height: 200px;
     width: 200px;
+    border: 2px solid black;
 }
 
 .names{

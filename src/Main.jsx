@@ -18,26 +18,28 @@ const Main = () => {
 
   return (
     <div className='container'>
-      <div className='in-container'>
-        {userdata?.results?.[0] ? (  
-          <>
-            <div className='left'>
-              <img src={userdata.results[0].picture.large} alt="User" />
-            </div>
-            <div className='right'>
-              <div className='names'>
-                <h3 className='firstname'>{userdata.results[0].name.first}</h3>
-                <h3 className='lastname'>{userdata.results[0].name.last}</h3>
+      <div className='out-container'>
+        <div className='in-container'>
+          {userdata?.results?.[0] ? (
+            <>
+              <div className='left'>
+                <img src={userdata.results[0].picture.large} alt="User" />
               </div>
-              <div className='details'>
-                <h3 className='gender'>{userdata.results[0].gender}</h3>
-                <h3 className='phonenum'>{userdata.results[0].cell}</h3>
+              <div className='right'>
+                <div className='names'>
+                  <h3 className='firstname'>{userdata.results[0].name.first}</h3>
+                  <h3 className='lastname'>{userdata.results[0].name.last}</h3>
+                </div>
+                <div className='details'>
+                  <h3 className='gender'>{userdata.results[0].gender}</h3>
+                  <h3 className='phonenum'>{userdata.results[0].cell}</h3>
+                </div>
               </div>
-            </div>
-          </>
-        ) : (
-          <p>Loading...</p>  
-        )}
+            </>
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div>
       </div>
     </div>
   );
