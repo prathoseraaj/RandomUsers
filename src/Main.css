@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    
+}
+
+.in-container{
+    background-color: white;
+    border: 1px solid black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0%;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.names{
+    display: flex;
+    gap: 10px;
+}
+
+.details{
+    margin-top: -15px;
+}
